@@ -5,6 +5,7 @@
 </head>
 <body>
 <nav th:replace="fragments :: navigation"></nav>
+<p></p>
 
 <form th:object="${form}" method="post">
     <div class="form-group">
@@ -17,7 +18,7 @@
         <input type="hidden" name="menuId" th:value="*{menu.id}" />
         <span th:errors="*{cheeseId}" class="error"></span>
     </div>
-
+    <p></p>
     <input type="submit" value="Add cheese" />
 </form>
 </body>

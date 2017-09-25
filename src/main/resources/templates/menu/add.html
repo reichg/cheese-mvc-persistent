@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org/">
 <body>
 <nav th:replace="fragments :: navigation"></nav>
+<p></p>
 <div class="container body-content">
 
     <form th:object="${menu}" method="post">
@@ -11,6 +12,7 @@
             <input th:field="*{name}" />
             <span th:errors="*{name}" class="error"></span>
         </div>
+        <p></p>
         <input type="submit" value="Add Menu" />
     </form>
 
